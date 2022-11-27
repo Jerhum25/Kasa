@@ -1,0 +1,43 @@
+.tags_name {
+  grid-area: c;
+  display: flex;
+  .tags {
+    width: auto;
+    height: 25px;
+    background: #ff6060;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 10px 15px;
+  }
+}
+.rating {
+  grid-area: d;
+  position: absolute;
+  right: 0;
+  height: min-content;
+  .star {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tags_name {
+    font-size: 10px;
+    border-radius: 5px;
+  }
+  .rating {
+    left: 0;
+    .star {
+      width: 15px;
+      height: 15px;
+      margin-left: 0px;
+      margin-right: 5px;
+    }
+  }
+}

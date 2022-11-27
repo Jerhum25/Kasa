@@ -1,0 +1,76 @@
+.fiche_logement {
+  .infos {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "a b" "c d";
+    gap: 20px;
+    position: relative;
+
+    width: 1240px;
+    margin: auto;
+
+    .title {
+      grid-area: a;
+      h1 {
+        font-weight: 500;
+        font-size: 36px;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+
+    .profile {
+      grid-area: b;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: 0;
+
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        text-align: right;
+        margin-right: 10px;
+      }
+
+      img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .fiche_logement {
+    .infos {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "a a" "c c" "d b";
+      align-items: center;
+      width: 90%;
+      .title {
+        h1 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+      .profile {
+        p {
+          font-size: 12px;
+        }
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+}

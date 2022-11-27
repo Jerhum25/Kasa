@@ -1,0 +1,52 @@
+.strong_point {
+  margin-bottom: 31px;
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff6060;
+    padding: 0 18px;
+    border-radius: 5px;
+    h3 {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    img {
+      height: 14.06px;
+      width: 23.86px;
+      cursor: pointer;
+    }
+    i {
+      color: #fff;
+    }
+    .vectorUp {
+      display: none;
+    }
+  }
+  p {
+    font-size: 24px;
+    font-weight: 400;
+    border-radius: 5px;
+    background: #f7f7f7;
+    padding: 18px;
+    display: none;
+  }
+  .visible {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .strong_point {
+    .title {
+      height: 30px;
+      h3 {
+        font-size: 13px;
+      }
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}

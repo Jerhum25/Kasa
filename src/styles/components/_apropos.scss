@@ -1,0 +1,56 @@
+.apropos {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-self: flex-end;
+
+  .banner_apropos {
+    width: 1240px;
+    height: 223px;
+    margin: 44px auto 31px auto;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    .banner {
+      width: 1240px;
+      height: 223px;
+      position: absolute;
+      background-image: url("../../../public/assets/img/kalen-emsley-Bkci_8qcdvQ-unsplash\ 2.png");
+    }
+    .ombrage {
+      background: #000;
+      position: absolute;
+      width: 1240px;
+      height: 223px;
+      opacity: 0.3;
+    }
+  }
+
+  .strong_points {
+    width: 1023px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .apropos {
+    .banner_apropos {
+      width: 336px;
+      height: 223px;
+      margin: 20px;
+      position: relative;
+      margin: 20px auto auto auto;
+
+      .banner {
+        background-image: url("../../../public/assets/img/gustavo-alves-YOXSC4zRcxw-unsplash\ 1.png");
+        width: 446px;
+        height: 258px;
+      }
+    }
+    .strong_points {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+}

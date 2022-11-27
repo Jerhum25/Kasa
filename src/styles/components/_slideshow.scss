@@ -1,0 +1,53 @@
+.carrousel {
+  width: 1240px;
+  height: 415px;
+  margin: auto;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  margin-top: 25.36px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  .photo-logement.active {
+    width: 100%;
+    position: absolute;
+  }
+  .vector-left {
+    position: absolute;
+    left: 15px;
+  }
+  .vector-right {
+    position: absolute;
+    right: 15px;
+  }
+  .image-number{
+    position: absolute;
+    bottom: 15px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    left: 50%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .carrousel{
+    width: 335px;
+    height: 255px;
+    border-radius: 10px;
+    .photo-logement.active{
+      height: 100%;
+      width: auto;
+      object-position: center;
+    }
+    .vector-left, .vector-right{
+      width: 11px;
+      height: 19px;
+    }
+    .image-number{
+      display: none;
+    }
+  }
+}

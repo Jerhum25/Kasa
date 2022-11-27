@@ -1,0 +1,46 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+
+    img {
+        width: 210, 32px;
+        height: 68px;
+        margin-left: 100px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: right;
+        margin-right: 100px;
+        font-size: 24px;
+        font-weight: 500;
+
+        li {
+            margin-left: 57px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .navigation {
+        width: 100%;
+
+        img {
+            width: 145px;
+            height: 47px;
+            margin-left: 20px;
+        }
+
+        ul {
+            margin-right: 20px;
+            font-size: 12px;
+
+            li {
+                margin-left: 10px;
+            }
+        }
+    }
+}
