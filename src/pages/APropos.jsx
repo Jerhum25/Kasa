@@ -1,9 +1,9 @@
-import DropDownAPropos from "../components/DropDownAPropos";
+import Collapse from "../components/Collapse";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import { aProposData } from "../datas/aPropos";
 
-const APropos = (id) => {
+const APropos = () => {
   return (
     <div className="apropos">
       <Navigation />
@@ -13,7 +13,7 @@ const APropos = (id) => {
       </div>
       <div className="strong_points">
         {aProposData.map((data, index) => (
-          <DropDownAPropos
+          <Collapse
             key={index}
             title={data.title}
             description={data.description}

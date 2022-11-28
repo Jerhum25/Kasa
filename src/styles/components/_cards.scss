@@ -1,0 +1,17 @@
+.cards {
+  margin: auto;
+  width: 1240px;
+  padding: 50px;
+  background: #f7f7f7;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+  .cards {
+    width: 100%;
+    padding: 20px;
+  }
+}

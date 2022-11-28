@@ -1,12 +1,15 @@
-.strong_point {
+.collapse {
   margin-bottom: 31px;
   .title {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #ff6060;
-    padding: 0 18px;
-    border-radius: 5px;
+    padding: 13px 18px;
+    border-radius: 10px;
+    margin-bottom: -10px;
+    position: relative;
     h3 {
       color: #fff;
       font-size: 24px;
@@ -17,35 +20,35 @@
       width: 23.86px;
       cursor: pointer;
     }
-    i {
-      color: #fff;
-    }
     .vectorUp {
       display: none;
     }
   }
-  p {
+  .description {
     font-size: 24px;
     font-weight: 400;
-    border-radius: 5px;
+    border-radius: 10px;
     background: #f7f7f7;
     padding: 18px;
     display: none;
+    z-index: -10;
   }
   .visible {
-    display: flex;
+    display: block;
+    z-index: -10;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .strong_point {
+  .collapse {
     .title {
-      height: 30px;
+      padding: 6px 11px;
+      border-radius: 5px;
       h3 {
         font-size: 13px;
       }
     }
-    p {
+    .description {
       font-size: 12px;
     }
   }

@@ -1,0 +1,48 @@
+.pageErreur {
+  text-align: center;
+  width: 1440px;
+  height: 1024px;
+  margin: auto;
+
+  h1 {
+    font-size: 288px;
+    font-weight: 700;
+    line-height: 411px;
+    margin-top: 169px;
+  }
+
+  p {
+    font-size: 36px;
+    line-height: 51, 34px;
+    font-weight: 500;
+  }
+
+  .retourAccueil {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28, 67px;
+    margin-top: 182px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pageErreur {
+    width: 100%;
+    height: auto;
+    h1 {
+      font-size: 96px;
+      width: 198px;
+      height: 99px;
+      margin: auto;
+    }
+    p {
+      font-size: 18px;
+      margin-left: 57px;
+      margin-right: 57px;
+      line-height: 142.6%;
+    }
+    .retourAccueil {
+      font-size: 14px;
+    }
+  }
+}

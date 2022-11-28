@@ -11,7 +11,7 @@ const Tags = () => {
 
   const singleLocation = getOneLocation(id);
 
-  // je récupère les tagset rating de la location
+  // je récupère les tags et rating de la location
   const tags = singleLocation.tags;
   const rating = singleLocation.rating;
 

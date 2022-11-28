@@ -21,7 +21,7 @@
     position: absolute;
     right: 15px;
   }
-  .image-number{
+  .image-number {
     position: absolute;
     bottom: 15px;
     color: #fff;
@@ -31,22 +31,22 @@
   }
 }
 
-
 @media screen and (max-width: 600px) {
-  .carrousel{
+  .carrousel {
     width: 335px;
     height: 255px;
     border-radius: 10px;
-    .photo-logement.active{
+    .photo-logement.active {
       height: 100%;
       width: auto;
       object-position: center;
     }
-    .vector-left, .vector-right{
+    .vector-left,
+    .vector-right {
       width: 11px;
       height: 19px;
     }
-    .image-number{
+    .image-number {
       display: none;
     }
   }

@@ -26,14 +26,14 @@ const Slideshow = () => {
     <div className="carrousel">
       {singleImage.map((image, index) => {
         return (
-            <img
-              key={index}
-              className={
-                index === current ? "photo-logement active" : "photo-logement"
-              }
-              src={image}
-              alt="logement"
-            />
+          <img
+            key={index}
+            className={
+              index === current ? "photo-logement active" : "photo-logement"
+            }
+            src={image}
+            alt="logement"
+          />
         );
       })}
       {length === 1 ? (

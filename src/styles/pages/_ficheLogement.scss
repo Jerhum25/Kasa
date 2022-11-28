@@ -44,6 +44,19 @@
       }
     }
   }
+  .descriptions {
+    width: 1240px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .collapse {
+      width: 48%;
+      li {
+        list-style-type: none;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -70,6 +83,12 @@
           width: 32px;
           height: 32px;
         }
+      }
+    }
+    .descriptions {
+      width: 90%;
+      .collapse {
+        width: 100%;
       }
     }
   }
