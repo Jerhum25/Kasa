@@ -1,10 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../assets/img/LOGO.png";
 
 const Navigation = () => {
   return (
     <div className="navigation">
-      <img src="../../assets/img/LOGO.png" alt="logo" />
+      <img src={logo} alt="logo" />
       <ul>
         <NavLink to="/">
           <li>Accueil</li>

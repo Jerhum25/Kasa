@@ -1,4 +1,6 @@
 import { useState } from "react";
+import vectorUp from "../assets/img/Vector-up.png";
+import vectorDown from "../assets/img/Vector-down.png";
 
 const Collapse = ({ title, description }) => {
   const [open, setOpen] = useState(false);
@@ -11,11 +13,7 @@ const Collapse = ({ title, description }) => {
         <div className="title">
           <h3>{title}</h3>
           <img
-            src={
-              open === false
-                ? "../../assets/img/Vector-down.png"
-                : "../../assets/img/Vector-up.png"
-            }
+            src={open === false ? vectorDown : vectorUp}
             className={open === true ? "active" : ""}
             alt={open === false ? "vector up" : "vector down"}
             onClick={classToggle}

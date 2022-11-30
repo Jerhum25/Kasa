@@ -1,5 +1,5 @@
 import React from "react";
-import BannerHome from "../components/BannerHome";
+import Banner from "../components/Banner";
 import Cards from "../components/Cards";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="home">
       <Navigation />
-      <BannerHome />
+      <Banner bannerTitle="Chez vous, partout et ailleurs" />
       <Cards />
       <Footer />
     </div>

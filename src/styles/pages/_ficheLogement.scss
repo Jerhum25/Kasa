@@ -52,6 +52,9 @@
     justify-content: space-between;
     .collapse {
       width: 48%;
+      .title {
+        font-size: 18px;
+      }
       li {
         list-style-type: none;
       }
@@ -67,6 +70,7 @@
       grid-template-areas: "a a" "c c" "d b";
       align-items: center;
       width: 90%;
+      margin-bottom: 15px;
       .title {
         h1 {
           font-size: 18px;

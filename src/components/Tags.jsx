@@ -1,5 +1,7 @@
 import { rentalList } from "../datas/locations";
 import { useParams } from "react-router-dom";
+import redStar from "../assets/img/red-star.png";
+import greyStar from "../assets/img/grey-star.png";
 
 const Tags = () => {
   // je récupère l'id dans l'URL
@@ -33,14 +35,14 @@ const Tags = () => {
         {stars.map((star) =>
           rating >= star ? (
             <img
-              src="../../assets/img/red-star.png"
+              src={redStar}
               className="star"
               key={star.toString()}
               alt="étoile"
             />
           ) : (
             <img
-              src="../../assets/img/grey-star.png"
+              src={greyStar}
               className="star"
               key={star.toString()}
               alt="étoile"

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { rentalList } from "../datas/locations";
 import { useParams } from "react-router-dom";
+import vectorLeft from "../assets/img/Vector-left.png";
+import vectorRight from "../assets/img/Vector-right.png";
 
 const Slideshow = () => {
   let { id } = useParams();
@@ -41,14 +43,14 @@ const Slideshow = () => {
       ) : (
         <>
           <img
-            src="../../assets/img/Vector-left.png"
+            src={vectorLeft}
             alt="flèche gauche"
             className="vector-left"
             onClick={previousPicture}
           />
 
           <img
-            src="../../assets/img/Vector-right.png"
+            src={vectorRight}
             alt="flèche droite"
             className="vector-right"
             onClick={nextPicture}

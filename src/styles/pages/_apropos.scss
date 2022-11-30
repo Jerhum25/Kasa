@@ -4,20 +4,8 @@
   flex-direction: column;
   min-height: 100vh;
   justify-self: flex-end;
-
-  .banner_apropos {
-    width: 1240px;
-    height: 223px;
-    margin: 44px auto 31px auto;
-    border-radius: 25px;
-    overflow: hidden;
-    position: relative;
-    .banner {
-      width: 1240px;
-      height: 223px;
-      position: absolute;
-      background-image: url("../../../public/assets/img/kalen-emsley-Bkci_8qcdvQ-unsplash\ 2.png");
-    }
+  .banner {
+    background-image: url("../../assets/img/kalen-emsley-Bkci_8qcdvQ-unsplash\ 2.png");
     .ombrage {
       background: #000;
       position: absolute;
@@ -30,27 +18,33 @@
   .strong_points {
     width: 1023px;
     margin: auto;
+    .collapse {
+      .title {
+        font-size: 24px;
+      }
+      .description {
+        font-size: 24px;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 600px) {
   .apropos {
-    .banner_apropos {
+    .banner {
+      background-image: url("../../assets/img/gustavo-alves-YOXSC4zRcxw-unsplash\ 1.png");
       width: 336px;
       height: 223px;
-      margin: 20px;
-      position: relative;
-      margin: 20px auto auto auto;
-
-      .banner {
-        background-image: url("../../../public/assets/img/gustavo-alves-YOXSC4zRcxw-unsplash\ 1.png");
-        width: 446px;
-        height: 258px;
-      }
+      margin-bottom: 0;
     }
     .strong_points {
       width: 100%;
       padding: 20px;
+      .collapse {
+        .description {
+          font-size: 12px;
+        }
+      }
     }
   }
 }

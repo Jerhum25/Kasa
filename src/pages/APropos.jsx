@@ -1,3 +1,4 @@
+import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
@@ -7,10 +8,7 @@ const APropos = () => {
   return (
     <div className="apropos">
       <Navigation />
-      <div className="banner_apropos">
-        <div className="banner"></div>
-        <div className="ombrage"></div>
-      </div>
+      <Banner />
       <div className="strong_points">
         {aProposData.map((data, index) => (
           <Collapse

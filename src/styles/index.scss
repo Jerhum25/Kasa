@@ -1,6 +1,8 @@
 @import "./settings";
 @import "./components/navigation";
-@import "./components/bannerHome";
+@import "./components/banner";
+@import "./components/collapse";
+@import "./pages/home";
 @import "./pages/pageErreur";
 @import "./components/cards";
 @import "./components/card";
@@ -9,4 +11,3 @@
 @import "./pages/ficheLogement";
 @import "./components/tags";
 @import "./components/slideshow";
-@import "./components/collapse";
