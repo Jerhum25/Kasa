@@ -4,6 +4,9 @@
   flex-direction: column;
   min-height: 100vh;
   justify-self: flex-end;
+  max-width: 1240px;
+  margin: auto;
+
   .banner {
     background-image: url("../../assets/img/kalen-emsley-Bkci_8qcdvQ-unsplash\ 2.png");
     .ombrage {
@@ -16,14 +19,18 @@
   }
 
   .strong_points {
-    width: 1023px;
-    margin: auto;
+    min-width: 100%;
+    padding: 20px;
     .collapse {
       .title {
+        max-width: 1023px;
+        margin: auto;
         font-size: 24px;
       }
       .description {
         font-size: 24px;
+        max-width: 1023px;
+        margin: auto;
       }
     }
   }
@@ -36,6 +43,7 @@
       width: 336px;
       height: 223px;
       margin-bottom: 0;
+      margin: auto;
     }
     .strong_points {
       width: 100%;

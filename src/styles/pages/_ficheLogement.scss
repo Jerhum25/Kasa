@@ -6,8 +6,7 @@
     grid-template-areas: "a b" "c d";
     gap: 20px;
     position: relative;
-
-    width: 1240px;
+    max-width: 1240px;
     margin: auto;
 
     .title {
@@ -45,7 +44,7 @@
     }
   }
   .descriptions {
-    width: 1240px;
+    max-width: 1240px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
